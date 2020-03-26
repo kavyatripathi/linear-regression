@@ -17,13 +17,15 @@ def plot (x,y,b):
     plt.ylabel('y')
     plt.show()
 
-def main():
-    x=np.array([0,1,2,3,4,5,6])
-    y=np.array([3,2,9,10,11,1])
-    b=coeff(x,y)
-    print("estimated coeff\nb0={}\nb1={}".format(b[0],b[1]))
-    plot(x,y,b)
-    if __name__=="__main__":
-        main()
+
+
+x=np.array([0,1,2,3,4,5])
+y=np.array([[3],[2],[9],[10],[11],[1]])
+y1=np.array([3,2,9,10,11,1])
+b=coeff(x,y)
+print("estimated coeff\nb0={}\nb1={}".format(b[0],b[1]))
+plot(x,y1,b)
+if __name__=="__main__":
+    main()
     
     
